@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>reroom Design System — Color</title>
+  <link rel="stylesheet" href="tokens/colors.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 48px 24px;
+      min-height: 100vh;
+    }
+
+    .page {
+      background: #f5f5f5;
+      border-radius: 24px;
+      padding: 62px;
+      width: 100%;
+      max-width: 1285px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* ── Section card ───────────────────────────── */
+    .section {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 57px 40px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8d8d91;
+      margin-bottom: 32px;
+    }
+
+    /* ── Colour grid ────────────────────────────── */
+    .colour-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+    }
+
+    .colour-row {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+    }
+
+    /* ── Single swatch ──────────────────────────── */
+    .swatch-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--sds-size-radius-400);
+      flex-shrink: 0;
+    }
+
+    .swatch--bordered {
+      border: var(--sds-size-stroke-border) solid var(--color-light-alpha-gray50);
+    }
+
+    .swatch-name {
+      font-size: 10px;
+      color: #8d8d91;
+      text-align: center;
+      max-width: 88px;
+      line-height: 1.4;
+    }
+
+    /* ── Button background swatches ─────────────── */
+
+    /* CTA */
+    .swatch--cta-default  { background: var(--color-button-cta-default); }
+    .swatch--cta-hover    { background: var(--color-button-cta-hover); }
+    .swatch--cta-pressed  { background: var(--color-button-cta-pressed); }
+
+    /* Primary */
+    .swatch--primary-default  { background: var(--color-button-primary-default); }
+    .swatch--primary-border   { background: var(--color-button-primary-border); }
+    .swatch--primary-hover    { background: var(--color-button-primary-hover); }
+    .swatch--primary-pressed  { background: var(--color-button-primary-pressed); }
+
+    /* Secondary */
+    .swatch--secondary-default  { background: var(--color-button-secondary-default); }
+    .swatch--secondary-border   { background: var(--color-button-secondary-border); }
+    .swatch--secondary-hover    { background: var(--color-button-secondary-hover); }
+    .swatch--secondary-pressed  { background: var(--color-button-secondary-pressed); }
+
+    /* Tertiary */
+    .swatch--tertiary-default  { background: var(--color-button-tertiary-default); }
+    .swatch--tertiary-border   { background: var(--color-button-tertiary-border); }
+    .swatch--tertiary-hover    { background: var(--color-button-tertiary-hover); }
+    .swatch--tertiary-pressed  { background: var(--color-button-tertiary-pressed); }
+
+    /* Disabled */
+    .swatch--disabled-default { background: var(--color-button-disabled-default); }
+
+    /* ── Text swatches ───────────────────────────── */
+    .swatch--text-basic    { background: var(--color-text-basic); }
+    .swatch--text-subtle   { background: var(--color-text-subtle); }
+    .swatch--text-disabled { background: var(--color-text-disabled); }
+    .swatch--text-inverse  { background: var(--color-text-inverse); }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ── Background / Button colors ───────────── -->
+    <div class="section">
+      <div class="section-label">background</div>
+      <div class="colour-grid">
+
+        <!-- Row 1: CTA -->
+        <div class="colour-row">
+          <div class="swatch-wrap">
+            <div class="swatch swatch--cta-default"></div>
+            <span class="swatch-name">cta-default</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--cta-hover"></div>
+            <span class="swatch-name">cta-hover</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--cta-pressed"></div>
+            <span class="swatch-name">cta-pressed</span>
+          </div>
+        </div>
+
+        <!-- Row 2: Primary -->
+        <div class="colour-row">
+          <div class="swatch-wrap">
+            <div class="swatch swatch--primary-default swatch--bordered"></div>
+            <span class="swatch-name">primary-default</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--primary-border swatch--bordered"></div>
+            <span class="swatch-name">primary-border</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--primary-hover swatch--bordered"></div>
+            <span class="swatch-name">primary-hover</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--primary-pressed swatch--bordered"></div>
+            <span class="swatch-name">primary-pressed</span>
+          </div>
+        </div>
+
+        <!-- Row 3: Secondary -->
+        <div class="colour-row">
+          <div class="swatch-wrap">
+            <div class="swatch swatch--secondary-default swatch--bordered"></div>
+            <span class="swatch-name">secondary-default</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--secondary-border swatch--bordered"></div>
+            <span class="swatch-name">secondary-border</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--secondary-hover swatch--bordered"></div>
+            <span class="swatch-name">secondary-hover</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--secondary-pressed swatch--bordered"></div>
+            <span class="swatch-name">secondary-pressed</span>
+          </div>
+        </div>
+
+        <!-- Row 4: Tertiary -->
+        <div class="colour-row">
+          <div class="swatch-wrap">
+            <div class="swatch swatch--tertiary-default swatch--bordered"></div>
+            <span class="swatch-name">tertiary-default</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--tertiary-border swatch--bordered"></div>
+            <span class="swatch-name">tertiary-border</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--tertiary-hover swatch--bordered"></div>
+            <span class="swatch-name">tertiary-hover</span>
+          </div>
+          <div class="swatch-wrap">
+            <div class="swatch swatch--tertiary-pressed swatch--bordered"></div>
+            <span class="swatch-name">tertiary-pressed</span>
+          </div>
+        </div>
+
+        <!-- Row 5: Disabled (single) -->
+        <div class="colour-row">
+          <div class="swatch-wrap">
+            <div class="swatch swatch--disabled-default swatch--bordered"></div>
+            <span class="swatch-name">disabled-default</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Text colors ───────────────────────────── -->
+    <div class="section">
+      <div class="section-label">text</div>
+      <div class="colour-row">
+        <div class="swatch-wrap">
+          <div class="swatch swatch--text-basic"></div>
+          <span class="swatch-name">text-basic</span>
+        </div>
+        <div class="swatch-wrap">
+          <div class="swatch swatch--text-subtle"></div>
+          <span class="swatch-name">text-subtle</span>
+        </div>
+        <div class="swatch-wrap">
+          <div class="swatch swatch--text-disabled"></div>
+          <span class="swatch-name">text-disabled</span>
+        </div>
+        <div class="swatch-wrap">
+          <div class="swatch swatch--text-inverse swatch--bordered"></div>
+          <span class="swatch-name">text-inverse</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

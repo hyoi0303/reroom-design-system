@@ -1,0 +1,57 @@
+/**
+ * reroom Design System — Color Tokens
+ * Source: Figma / Color (node 252:28)
+ */
+
+:root {
+  /* ── Primitive ────────────────────────────────── */
+  --color-primitive-black:   #000000;
+  --color-primitive-white:   #ffffff;
+  --color-primitive-gray-10: #19191a;
+  --color-primitive-gray-20: #282829;
+  --color-primitive-gray-90: #dbdbdc;
+  --color-primitive-gray-95: #eaeaeb;
+  --color-primitive-gray-97: #f7f7f8;
+  --color-primitive-red:     #ff0000;
+
+  /* ── Alpha ────────────────────────────────────── */
+  --color-light-alpha-gray50: rgba(40, 40, 41, 0.5);
+
+  /* ── Size / Radius ────────────────────────────── */
+  --sds-size-radius-400:    16px;
+  --sds-size-stroke-border: 1px;
+
+  /* ── Button ───────────────────────────────────── */
+
+  /* CTA */
+  --color-button-cta-default: var(--color-primitive-black);
+  --color-button-cta-hover:   var(--color-primitive-gray-10);
+  --color-button-cta-pressed: var(--color-primitive-gray-20);
+
+  /* Primary */
+  --color-button-primary-default: var(--color-primitive-white);
+  --color-button-primary-border:  var(--color-primitive-gray-95);
+  --color-button-primary-hover:   var(--color-primitive-gray-97);
+  --color-button-primary-pressed: var(--color-primitive-gray-95);
+
+  /* Secondary */
+  --color-button-secondary-default: var(--color-primitive-white);
+  --color-button-secondary-border:  var(--color-primitive-gray-10);
+  --color-button-secondary-hover:   var(--color-primitive-gray-97);
+  --color-button-secondary-pressed: var(--color-primitive-gray-95);
+
+  /* Tertiary */
+  --color-button-tertiary-default: var(--color-primitive-gray-97);
+  --color-button-tertiary-border:  var(--color-primitive-red);
+  --color-button-tertiary-hover:   var(--color-primitive-gray-95);
+  --color-button-tertiary-pressed: var(--color-primitive-gray-90);
+
+  /* Disabled */
+  --color-button-disabled-default: var(--color-primitive-gray-97);
+
+  /* ── Text ─────────────────────────────────────── */
+  --color-text-basic:    var(--color-primitive-gray-10);
+  --color-text-subtle:   #69696d;
+  --color-text-disabled: #8d8d91;
+  --color-text-inverse:  var(--color-primitive-white);
+}
