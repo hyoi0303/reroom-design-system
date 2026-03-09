@@ -1,18 +1,25 @@
 /**
  * reroom Design System — Color Tokens
  * Source: Figma / Color (node 252:28)
+ * All 20 Colour nodes individually verified via Figma MCP.
+ *
+ * NOTE: Figma uses CSS keywords (black, white, red) as fallback values
+ * for some tokens. We preserve those exact values here.
+ *
+ * NOTE: Figma has a typo "boder" in secondary-border and tertiary-border
+ * token names. We use corrected spelling "border" in this file.
  */
 
 :root {
   /* ── Primitive ────────────────────────────────── */
-  --color-primitive-black:   #000000;
-  --color-primitive-white:   #ffffff;
+  --color-primitive-black:   black;    /* Figma: black (252:44) */
+  --color-primitive-white:   white;    /* Figma: white (252:51, 252:58, 252:92) */
   --color-primitive-gray-10: #19191a;
   --color-primitive-gray-20: #282829;
   --color-primitive-gray-90: #dbdbdc;
   --color-primitive-gray-95: #eaeaeb;
   --color-primitive-gray-97: #f7f7f8;
-  --color-primitive-red:     #ff0000;
+  --color-primitive-red:     red;      /* Figma: red (252:65) */
 
   /* ── Alpha ────────────────────────────────────── */
   --color-light-alpha-gray50: rgba(40, 40, 41, 0.5);
