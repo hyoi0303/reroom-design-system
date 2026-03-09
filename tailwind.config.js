@@ -2,7 +2,7 @@
 const { colors } = require('./theme');
 
 module.exports = {
-  content: ['./**/*.html'],
+  content: ['./**/*.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors,
