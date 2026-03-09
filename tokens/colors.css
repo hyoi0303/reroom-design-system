@@ -56,6 +56,12 @@
   /* Disabled */
   --color-button-disabled-default: var(--color-primitive-gray-97);
 
+  /* ── Surface ────────────────────────────────── */
+  --color-surface-secondary: var(--color-primitive-gray-97);
+
+  /* ── Background ─────────────────────────────── */
+  --color-background-primary: var(--color-primitive-white);
+
   /* ── Text ─────────────────────────────────────── */
   --color-text-basic:    var(--color-primitive-gray-10);
   --color-text-subtle:   #69696d;
