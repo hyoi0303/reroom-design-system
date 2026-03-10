@@ -1,0 +1,286 @@
+/* =============================================================================
+   Design System Documentation Page Styles
+   ============================================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--sds-typography-font-family-base);
+  color: var(--sds-color-text-default-default);
+  background-color: var(--sds-color-background-default-secondary);
+}
+
+/* Root layout */
+.ds-root {
+  min-height: 100vh;
+}
+
+/* Header */
+.ds-header {
+  background-color: var(--sds-color-background-default-default);
+  border-bottom: 1px solid var(--sds-color-border-default-default);
+  padding: var(--sds-size-space-800) var(--sds-size-space-1600);
+}
+
+.ds-header-desc {
+  color: var(--sds-color-text-default-secondary);
+  margin-top: var(--sds-size-space-200);
+}
+
+/* Main layout — horizontal sections */
+.ds-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--sds-size-space-800);
+  padding: var(--sds-size-space-800) var(--sds-size-space-1600);
+}
+
+/* Each top-level section card */
+.ds-section {
+  background-color: var(--sds-color-background-default-default);
+  border: 1px solid var(--sds-color-border-default-default);
+  border-radius: var(--sds-size-radius-200);
+  padding: var(--sds-size-space-800);
+  flex-shrink: 0;
+}
+
+.ds-section-title {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-heading);
+  font-weight: var(--sds-typography-font-weight-semibold);
+  color: var(--sds-color-text-default-default);
+  margin-bottom: var(--sds-size-space-600);
+  padding-bottom: var(--sds-size-space-400);
+  border-bottom: 1px solid var(--sds-color-border-default-secondary);
+}
+
+.ds-subsection-title {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-subheading);
+  font-weight: var(--sds-typography-font-weight-semibold);
+  color: var(--sds-color-text-default-secondary);
+  margin-bottom: var(--sds-size-space-400);
+}
+
+/* Color subsection */
+.ds-color-subsection {
+  margin-bottom: var(--sds-size-space-800);
+}
+
+.ds-color-subsection:last-child {
+  margin-bottom: 0;
+}
+
+/* Color grid */
+.ds-color-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-size-space-400);
+}
+
+.ds-color-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sds-size-space-400);
+}
+
+.ds-color-category {
+  width: 64px;
+  flex-shrink: 0;
+  color: var(--sds-color-text-default-tertiary);
+  padding-top: 6px;
+}
+
+.ds-swatches {
+  display: flex;
+  gap: var(--sds-size-space-200);
+  flex-wrap: wrap;
+}
+
+.ds-swatch-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sds-size-space-100);
+  width: 72px;
+}
+
+.ds-swatch {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--sds-size-radius-100);
+}
+
+.ds-swatch--border {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: var(--sds-size-radius-100);
+}
+
+.ds-swatch--text {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--sds-size-radius-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sds-typography-font-family-base);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ds-swatch-label {
+  color: var(--sds-color-text-default-secondary);
+  text-align: center;
+  word-break: break-all;
+}
+
+.ds-swatch-hex {
+  color: var(--sds-color-text-default-tertiary);
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--sds-typography-font-family-code);
+}
+
+/* ─── Typography Table ──────────────────────────────────────────────────────── */
+
+.ds-typography-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 480px;
+}
+
+.ds-typography-header {
+  display: grid;
+  grid-template-columns: 120px 1fr 220px;
+  gap: var(--sds-size-space-400);
+  padding: var(--sds-size-space-200) var(--sds-size-space-400);
+  background-color: var(--sds-color-background-default-secondary);
+  border-radius: var(--sds-size-radius-100) var(--sds-size-radius-100) 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sds-color-text-default-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--sds-color-border-default-secondary);
+  border-bottom: none;
+}
+
+.ds-typography-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 220px;
+  gap: var(--sds-size-space-400);
+  padding: var(--sds-size-space-400);
+  align-items: center;
+  border: 1px solid var(--sds-color-border-default-secondary);
+  border-top: none;
+}
+
+.ds-typography-row:last-child {
+  border-radius: 0 0 var(--sds-size-radius-100) var(--sds-size-radius-100);
+}
+
+.ds-typography-label {
+  color: var(--sds-color-text-default-secondary);
+}
+
+.ds-typography-sample {
+  color: var(--sds-color-text-default-default);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ds-typography-meta {
+  color: var(--sds-color-text-default-tertiary);
+  font-family: var(--sds-typography-font-family-code);
+}
+
+/* ─── Spacing Section ─────────────────────────────────────────────────────── */
+
+.ds-spacing-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-size-space-300);
+  min-width: 400px;
+}
+
+.ds-spacing-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sds-size-space-400);
+}
+
+.ds-spacing-bar {
+  height: 20px;
+  background-color: var(--sds-color-background-brand-default);
+  border-radius: var(--sds-size-radius-100);
+  min-width: 4px;
+  flex-shrink: 0;
+}
+
+.ds-spacing-token {
+  flex: 1;
+  color: var(--sds-color-text-default-secondary);
+  font-family: var(--sds-typography-font-family-code);
+  font-size: 12px;
+}
+
+.ds-spacing-value {
+  color: var(--sds-color-text-default-tertiary);
+  font-family: var(--sds-typography-font-family-code);
+  font-size: 12px;
+  width: 40px;
+  text-align: right;
+}
+
+/* ─── Radius Section ────────────────────────────────────────────────────────── */
+
+.ds-radius-list {
+  display: flex;
+  gap: var(--sds-size-space-600);
+  flex-wrap: wrap;
+}
+
+.ds-radius-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sds-size-space-200);
+}
+
+.ds-radius-box {
+  width: 64px;
+  height: 64px;
+  background-color: var(--sds-color-background-brand-default);
+}
+
+.ds-radius-token {
+  color: var(--sds-color-text-default-secondary);
+  font-family: var(--sds-typography-font-family-code);
+  font-size: 12px;
+  text-align: center;
+}
+
+.ds-radius-value {
+  color: var(--sds-color-text-default-tertiary);
+  font-family: var(--sds-typography-font-family-code);
+  font-size: 12px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 1200px) {
+  .ds-main {
+    flex-direction: column;
+  }
+
+  .ds-section {
+    width: 100%;
+  }
+}

@@ -1,0 +1,300 @@
+/* =============================================================================
+   Reroom Design System — Design Tokens
+   CSS Custom Properties (--sds-*)
+   ============================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400&display=swap');
+
+:root {
+
+  /* ===========================================================================
+     SIZE TOKENS
+     =========================================================================== */
+
+  /* Spacing */
+  --sds-size-space-100: 4px;
+  --sds-size-space-200: 8px;
+  --sds-size-space-300: 12px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-600: 24px;
+  --sds-size-space-800: 32px;
+  --sds-size-space-1600: 64px;
+  --sds-size-space-2400: 96px;
+  --sds-size-space-4000: 160px;
+
+  /* Border Radius */
+  --sds-size-radius-100: 4px;
+  --sds-size-radius-200: 8px;
+  --sds-size-radius-400: 16px;
+  --sds-size-radius-xl: 24px;
+  --sds-size-radius-full: 9999px;
+
+  /* Sizing */
+  --sds-size-icon-small: 24px;
+
+  /* Depth / Shadows */
+  --sds-size-depth-100-x: 0px;
+  --sds-size-depth-100-y: 1px;
+  --sds-size-depth-100-blur: 4px;
+  --sds-size-depth-100-spread: 0px;
+  --sds-size-depth-200-x: 0px;
+  --sds-size-depth-200-y: 2px;
+  --sds-size-depth-200-blur: 8px;
+  --sds-size-depth-200-spread: 0px;
+  --sds-size-depth-400-x: 0px;
+  --sds-size-depth-400-y: 4px;
+  --sds-size-depth-400-blur: 16px;
+  --sds-size-depth-400-spread: 0px;
+
+  /* ===========================================================================
+     COLOR TOKENS — BACKGROUND
+     =========================================================================== */
+
+  /* Default */
+  --sds-color-background-default-default: #ffffff;
+  --sds-color-background-default-secondary: #f5f5f5;
+  --sds-color-background-default-tertiary: #ebebeb;
+  --sds-color-background-default-hover: #f0f0f0;
+
+  /* Brand */
+  --sds-color-background-brand-default: #2c2c2c;
+  --sds-color-background-brand-secondary: #3d3d3d;
+  --sds-color-background-brand-tertiary: #525252;
+  --sds-color-background-brand-hover: #1a1a1a;
+
+  /* Neutral */
+  --sds-color-background-neutral-default: #5a5a5a;
+  --sds-color-background-neutral-secondary: #757575;
+  --sds-color-background-neutral-tertiary: #919191;
+  --sds-color-background-neutral-hover: #4a4a4a;
+
+  /* Positive (green) */
+  --sds-color-background-positive-default: #14ae5c;
+  --sds-color-background-positive-secondary: #d9f5e7;
+  --sds-color-background-positive-tertiary: #f0fbf5;
+  --sds-color-background-positive-hover: #0e9a50;
+
+  /* Warning (yellow) */
+  --sds-color-background-warning-default: #e8b931;
+  --sds-color-background-warning-secondary: #fdf3d0;
+  --sds-color-background-warning-tertiary: #fef9ec;
+  --sds-color-background-warning-hover: #d4a620;
+
+  /* Danger (red) */
+  --sds-color-background-danger-default: #ec221f;
+  --sds-color-background-danger-secondary: #fdd9d8;
+  --sds-color-background-danger-tertiary: #fff0f0;
+  --sds-color-background-danger-hover: #d41a17;
+
+  /* ===========================================================================
+     COLOR TOKENS — BORDER
+     =========================================================================== */
+
+  /* Default */
+  --sds-color-border-default-default: #d9d9d9;
+  --sds-color-border-default-secondary: #ebebeb;
+  --sds-color-border-default-tertiary: #f5f5f5;
+
+  /* Brand */
+  --sds-color-border-brand-default: #2c2c2c;
+  --sds-color-border-brand-secondary: #525252;
+  --sds-color-border-brand-tertiary: #757575;
+
+  /* Neutral */
+  --sds-color-border-neutral-default: #919191;
+  --sds-color-border-neutral-secondary: #b5b5b5;
+  --sds-color-border-neutral-tertiary: #d9d9d9;
+
+  /* Positive */
+  --sds-color-border-positive-default: #14ae5c;
+  --sds-color-border-positive-secondary: #5fd99a;
+  --sds-color-border-positive-tertiary: #a8eccc;
+
+  /* Warning */
+  --sds-color-border-warning-default: #e8b931;
+  --sds-color-border-warning-secondary: #f1d27e;
+  --sds-color-border-warning-tertiary: #f7e4b0;
+
+  /* Danger */
+  --sds-color-border-danger-default: #ec221f;
+  --sds-color-border-danger-secondary: #f47978;
+  --sds-color-border-danger-tertiary: #f9bcbc;
+
+  /* ===========================================================================
+     COLOR TOKENS — TEXT
+     =========================================================================== */
+
+  /* Default */
+  --sds-color-text-default-default: #1e1e1e;
+  --sds-color-text-default-secondary: #5a5a5a;
+  --sds-color-text-default-tertiary: #919191;
+  --sds-color-text-default-on-color: #ffffff;
+
+  /* Brand */
+  --sds-color-text-brand-default: #2c2c2c;
+  --sds-color-text-brand-secondary: #525252;
+  --sds-color-text-brand-on-color: #ffffff;
+
+  /* Neutral */
+  --sds-color-text-neutral-default: #5a5a5a;
+  --sds-color-text-neutral-secondary: #757575;
+  --sds-color-text-neutral-on-color: #ffffff;
+
+  /* Positive */
+  --sds-color-text-positive-default: #0a8a49;
+  --sds-color-text-positive-secondary: #14ae5c;
+  --sds-color-text-positive-on-color: #ffffff;
+
+  /* Warning */
+  --sds-color-text-warning-default: #a07c10;
+  --sds-color-text-warning-secondary: #c49a1e;
+  --sds-color-text-warning-on-color: #ffffff;
+
+  /* Danger */
+  --sds-color-text-danger-default: #c01a17;
+  --sds-color-text-danger-secondary: #ec221f;
+  --sds-color-text-danger-on-color: #ffffff;
+
+  /* ===========================================================================
+     COLOR TOKENS — ICON
+     =========================================================================== */
+
+  /* Default */
+  --sds-color-icon-default-default: #1e1e1e;
+  --sds-color-icon-default-secondary: #5a5a5a;
+  --sds-color-icon-default-tertiary: #919191;
+  --sds-color-icon-default-on-color: #ffffff;
+
+  /* Brand */
+  --sds-color-icon-brand-default: #2c2c2c;
+  --sds-color-icon-brand-secondary: #525252;
+  --sds-color-icon-brand-on-color: #ffffff;
+
+  /* Neutral */
+  --sds-color-icon-neutral-default: #5a5a5a;
+  --sds-color-icon-neutral-secondary: #757575;
+  --sds-color-icon-neutral-on-color: #ffffff;
+
+  /* Positive */
+  --sds-color-icon-positive-default: #0a8a49;
+  --sds-color-icon-positive-secondary: #14ae5c;
+  --sds-color-icon-positive-on-color: #ffffff;
+
+  /* Warning */
+  --sds-color-icon-warning-default: #a07c10;
+  --sds-color-icon-warning-secondary: #c49a1e;
+  --sds-color-icon-warning-on-color: #ffffff;
+
+  /* Danger */
+  --sds-color-icon-danger-default: #c01a17;
+  --sds-color-icon-danger-secondary: #ec221f;
+  --sds-color-icon-danger-on-color: #ffffff;
+
+  /* ===========================================================================
+     TYPOGRAPHY TOKENS
+     =========================================================================== */
+
+  /* Font Families */
+  --sds-typography-font-family-base: 'Inter', sans-serif;
+  --sds-typography-font-family-code: 'Roboto Mono', monospace;
+
+  /* Font Weights */
+  --sds-typography-font-weight-regular: 400;
+  --sds-typography-font-weight-semibold: 600;
+  --sds-typography-font-weight-bold: 700;
+
+  /* Font Sizes */
+  --sds-typography-font-size-title-hero: 72px;
+  --sds-typography-font-size-title-page: 48px;
+  --sds-typography-font-size-subtitle: 32px;
+  --sds-typography-font-size-heading: 24px;
+  --sds-typography-font-size-subheading: 20px;
+  --sds-typography-font-size-body: 16px;
+  --sds-typography-font-size-body-small: 14px;
+
+  /* Line Heights */
+  --sds-typography-line-height-tight: 1.2;
+  --sds-typography-line-height-normal: 1.4;
+  --sds-typography-line-height-body: 1.5;
+
+  /* Letter Spacings */
+  --sds-typography-letter-spacing-tight: -0.03em;
+  --sds-typography-letter-spacing-snug: -0.02em;
+  --sds-typography-letter-spacing-normal: 0em;
+}
+
+/* =============================================================================
+   TYPOGRAPHY CLASSES
+   ============================================================================= */
+
+.sds-text-title-hero {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-title-hero);
+  font-weight: var(--sds-typography-font-weight-bold);
+  line-height: var(--sds-typography-line-height-tight);
+  letter-spacing: var(--sds-typography-letter-spacing-tight);
+}
+
+.sds-text-title-page {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-title-page);
+  font-weight: var(--sds-typography-font-weight-bold);
+  line-height: var(--sds-typography-line-height-tight);
+  letter-spacing: var(--sds-typography-letter-spacing-snug);
+}
+
+.sds-text-subtitle {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-subtitle);
+  font-weight: var(--sds-typography-font-weight-regular);
+  line-height: var(--sds-typography-line-height-tight);
+  letter-spacing: var(--sds-typography-letter-spacing-normal);
+}
+
+.sds-text-heading {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-heading);
+  font-weight: var(--sds-typography-font-weight-semibold);
+  line-height: var(--sds-typography-line-height-tight);
+  letter-spacing: var(--sds-typography-letter-spacing-snug);
+}
+
+.sds-text-subheading {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-subheading);
+  font-weight: var(--sds-typography-font-weight-regular);
+  line-height: var(--sds-typography-line-height-tight);
+  letter-spacing: var(--sds-typography-letter-spacing-normal);
+}
+
+.sds-text-body-base {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-body);
+  font-weight: var(--sds-typography-font-weight-regular);
+  line-height: var(--sds-typography-line-height-normal);
+  letter-spacing: var(--sds-typography-letter-spacing-normal);
+}
+
+.sds-text-body-strong {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-body);
+  font-weight: var(--sds-typography-font-weight-semibold);
+  line-height: var(--sds-typography-line-height-normal);
+  letter-spacing: var(--sds-typography-letter-spacing-normal);
+}
+
+.sds-text-body-small {
+  font-family: var(--sds-typography-font-family-base);
+  font-size: var(--sds-typography-font-size-body-small);
+  font-weight: var(--sds-typography-font-weight-regular);
+  line-height: var(--sds-typography-line-height-body);
+  letter-spacing: var(--sds-typography-letter-spacing-normal);
+}
+
+.sds-text-body-code {
+  font-family: var(--sds-typography-font-family-code);
+  font-size: var(--sds-typography-font-size-body);
+  font-weight: var(--sds-typography-font-weight-regular);
+  line-height: var(--sds-typography-line-height-body);
+  letter-spacing: var(--sds-typography-letter-spacing-normal);
+}
